@@ -7,8 +7,8 @@
 /* 
  * File:   main.cpp
  * Author: jakec
- * Project 1, Vesion 1: Baccarat
- * Created on May 9, 2021, 1:58 PM
+ * Project 2, Vesion 9: Baccarat
+ * Created on June 4, 2021, 3:05 PM
  */
 
 /*
@@ -113,7 +113,7 @@ int main(int argc, char** argv) {
     vector<unsigned short> cards(crdSZ); //Array -number on cards
     
     //Initialize variables
-    /*GAME PLAYED WITH 6-8 DECKS OF CARDS TO NO NEED TO MANIPULATE
+    /*GAME PLAYED WITH 6-8 DECKS OF CARDS SO NO NEED TO MANIPULATE
       PROBABILITIES BASED UPON PAST DRAWS*/
     rounds = 0;
 
@@ -134,7 +134,7 @@ int main(int argc, char** argv) {
     //cout << "Size of float is " << sizeof(float) << endl;
     
     do {
-        rndCrd(cards);
+        rndCrd(cards); //Function to generate random values for cards
         
         for (int i=0; i<crdSIZE; i++) {
             suitVal[i] = rndSuit(); //Random number generation from 1-4
@@ -411,8 +411,8 @@ void viewScr() {
                 else {
                     cout << "You selected \"No\"...\n" << endl;
                     scrSrch(scores, names, SIZE);
-                    cout << "from bottom of chart...\n"
-                         << "Goodbye" << endl;
+
+                    cout << "Goodbye" << endl;
                 }
         }
         else {
@@ -547,7 +547,7 @@ bool binSrch(int a[], string b[], int n, int value, int index) {
             found = true;
             index=i;
             cout << value << " at completion by " << b[i] << " in position " << index << endl;
-            exit(0);
+            exit(0); //Exit if found = true
         }
         else {
             found = false;
