@@ -43,14 +43,13 @@ Here are some more rules to help you ace a baccarat game:
 
 //System Libraries
 #include <iostream>    //Input/Output Library
-#include <iomanip>     //Use for formatting and setting $ to 10ths place for cents
+#include <iomanip>     //Use for formatting
 #include <stdlib.h>    //srand, rand, exit function
 #include <time.h>      //time for random number seed purposes
 #include <string>      //Displaying cards drawn, etc.
-#include <fstream>     //To read and write statistics files
+#include <fstream>     //To read and write binary files
 #include <ctime>       //Print out time
-#include <cmath>       //Used for rounding to nearest $
-#include <vector>      //STL Dynamic Array
+#include <vector>
 using namespace std;   //Library Name-space
 
 //User Libraries
